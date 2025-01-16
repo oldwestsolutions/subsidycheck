@@ -10,13 +10,13 @@
 <body class="min-h-screen flex flex-col">
     <!-- Header -->
     <header class="bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-4 sm:h-16 space-y-4 sm:space-y-0">
                 <div class="flex items-center">
-                    <i data-feather="home" class="h-8 w-8 text-green-800"></i>
-                    <span class="ml-2 text-xl font-semibold text-gray-900">State Benefits Portal</span>
+                    <i data-feather="home" class="h-6 w-6 sm:h-8 sm:w-8 text-green-800"></i>
+                    <span class="ml-2 text-lg sm:text-xl font-semibold text-gray-900">State Benefits Portal</span>
                 </div>
-                <button class="bg-green-800 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-green-900 transition-colors flex items-center shadow-md">
+                <button class="w-full sm:w-auto bg-green-800 text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-green-900 transition-colors flex items-center justify-center shadow-md">
                     Book a Broker
                     <i data-feather="user" class="ml-2 h-4 w-4"></i>
                 </button>
@@ -25,30 +25,29 @@
     </header>
 
     <!-- Hero Section -->
-<div class="relative text-white py-16">
-    <div class="absolute inset-0 z-0">
-        <img src="StateBenefits.jpg" alt="Scenic mountain village with traditional architecture and dramatic sky" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-green-800/80 mix-blend-multiply"></div>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="w-1/2">
-            <!-- Apply backdrop-blur to the background overlay -->
-                <div class="hero-content" style="text-align: left; background: rgba(0, 0, 0, 0.5); padding: 23px; border-radius: 8px;">
-                <h1 class="text-5xl font-bold mb-6 text-white">Apply for Benefits Today</h1>
-                <p class="text-xl text-white mb-8">
-                    Get the support you need through our streamlined application process. 
-                    One application connects you to multiple assistance programs.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="bg-yellow-500 text-green-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center shadow-lg">
-                        Start Application
-                        <i data-feather="arrow-right" class="ml-2 h-5 w-5"></i>
-                    </button>
+    <div class="relative text-white py-8 sm:py-16">
+        <div class="absolute inset-0 z-0">
+            <img src="/api/placeholder/800/600" alt="Scenic mountain village with traditional architecture" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-green-800/80 mix-blend-multiply"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="w-full sm:w-2/3 md:w-1/2">
+                <div class="hero-content bg-black bg-opacity-50 backdrop-blur-sm p-4 sm:p-6 rounded-lg">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white">Apply for Benefits Today</h1>
+                    <p class="text-base sm:text-lg md:text-xl text-white mb-6 sm:mb-8">
+                        Get the support you need through our streamlined application process. 
+                        One application connects you to multiple assistance programs.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <button class="w-full sm:w-auto bg-yellow-500 text-green-800 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center shadow-lg">
+                            Start Application
+                            <i data-feather="arrow-right" class="ml-2 h-5 w-5"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Process Section -->
     <div class="py-16 bg-white">
