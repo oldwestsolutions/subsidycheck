@@ -7,9 +7,54 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>State Benefits Portal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+        <style>
+        /* Custom tooltip styles */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            background-color: #1b5e20;
+            color: white;
+            text-align: left;
+            padding: 12px;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.875rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Add arrow to tooltip */
+        .tooltip .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1b5e20 transparent transparent transparent;
+        }
+    </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
-</head>
-<body class="min-h-screen flex flex-col">
+    </head>
+    <body class="min-h-screen flex flex-col">
     <!-- Header - Modified to stay horizontal -->
     <header class="bg-white border-b">
         <div class="max-w-7xl mx-auto px-4">
